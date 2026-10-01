@@ -1,0 +1,163 @@
+:root {
+    --color-primary: #1e1b4b;       /* Violeta índigo profundo (Contexto inmersivo/tecnológico) */
+    --color-secondary: #4338ca;     /* Azul violeta vibrante para elementos secundarios */
+    --color-accent: #0284c7;        /* Cian azulado para resaltados y acciones de alto contraste */
+    --color-bg: #f8fafc;            /* Gris azulado ultraclaro para fondos descansados */
+    --color-surface: #ffffff;       /* Blanco puro para tarjetas y superficies */
+    --color-text: #0f172a;          /* Azul grisáceo muy oscuro (Garantiza contraste WCAG AA 14:1) */
+    --color-border: #e2e8f0;        /* Gris claro para bordes de tablas y separadores */
+    --color-hover: #1d4ed8;         /* Azul para estados hover/focus */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.375rem;
+}
+
+
+.site-header {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.site-header__title {
+    margin: 0 0 0.5rem 0;
+    font-size: 2.25rem;
+}
+
+.site-header__intro {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+
+.main-nav {
+    background-color: var(--color-surface);
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.main-nav__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0.75rem;
+    padding: 0.25rem 0.5rem;
+    transition: color 0.2s ease;
+}
+
+.main-nav__link:hover,
+.main-nav__link:focus {
+    color: var(--color-hover);
+    text-decoration: underline;
+}
+
+.main-nav__link--active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-accent);
+}
+
+
+.site-main {
+    width: min(1000px, 92%);
+    margin: 2rem auto;
+}
+
+.topic-section {
+    background-color: var(--color-surface);
+    padding: 1.75rem;
+    margin-bottom: 1.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--color-border);
+}
+
+.topic-section__title {
+    color: var(--color-primary);
+    margin-top: 0;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 0.5rem;
+}
+
+
+.topic-list {
+    padding-left: 1.5rem;
+}
+
+.topic-list__item {
+    margin-bottom: 0.5rem;
+}
+
+
+.topic-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.topic-table__caption {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: var(--color-primary);
+}
+
+.topic-table__header {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.topic-table__cell {
+    border: 1px solid var(--color-border);
+    padding: 0.75rem;
+}
+
+
+.topic-figure {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.topic-figure__caption {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+
+a {
+    color: var(--color-accent);
+}
+
+a:hover {
+    color: var(--color-hover);
+}
+
+
+.site-footer {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
